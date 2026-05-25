@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto con Imagen</title>
+
+    <style>
+
+        body{
+            background: rgb(500, 800, 800);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1{
+            font-size: 72px;
+            font-family: Arial, sans-serif;
+
+            background: url('https://wallpapers.com/images/hd/high-resolution-pictures-puccpyyw2lg8zvek.jpg');
+
+            background-size: cover;
+            background-position: center;
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            animation: brillo 3s infinite alternate;
+        }
+
+        @keyframes brillo{
+
+            0%{
+                filter: brightness(1);
+            }
+
+            50%{
+                filter: brightness(2);
+            }
+
+            100%{
+                filter: hue-rotate(90deg);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Hello World Floresita Silva💕</h1>
+
+</body>
+</html>

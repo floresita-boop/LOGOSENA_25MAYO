@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    height: 100vh;
+
+    background:
+        linear-gradient(-10deg, #fff 19%, transparent 19%),
+        url('https://wallpapers.com/images/hd/high-resolution-pictures-puccpyyw2lg8zvek.jpg');
+
+   
+}
+.fondo{
+    background: #eaeaea;
+
+ 
+}
+.triangle{
+    background: url(https://cdn0.uncomo.com/es/posts/3/2/6/significado_del_buho_como_animal_de_poder_48623_600.jpg) no-repeat center center;
+    width: 250px; height: 250px; clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+}
+.octagon{
+background:  url('https://play-lh.googleusercontent.com/7od8gdd5WelEN09YhMxiNzMOXWQouPRD7gdbc-Fnmg9pIyu1kdKEyhy8xsvM_0LHNwmw') no-repeat center;
+width: 200px;  
+height: 200px;
+clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.estrella{
+    background:  url('https://wallpapers.com/images/hd/pretty-profile-pictures-uzcf564gcoia7dzr.jpg') no-repeat center;
+    width: 200px;  
+    height: 200px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+body{
+    background: #dfe8ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* BUTTON 2 */
+
+.button2{
+    width: 180px;
+    height: 80px;
+
+    background: linear-gradient(to bottom, #c81d53, #8d143c);
+
+    border: 4px solid rgba(255,255,255,0.7);
+
+
+border-radius: 50px 15px 50px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow:
+    inset 0 2px 4px rgba(255,255,255,0.4),
+    0 3px 6px rgba(0,0,0,0.3);
+}
+
+/* TEXTO */
+
+.button2 span{
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+.masked{
+
+    width:400px;
+    height:300px;
+
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxnVd-6if1GdN-WSpJfCyVcZNzzzRt023OmQ&s');
+
+    background-size:cover;
+    background-position:center;
+
+    -webkit-mask-image:
+    linear-gradient(to bottom, transparent 5%, black 75%);
+
+    mask-image:
+    linear-gradient(to bottom, transparent 5%, black 75%);
+}
+
+
+#masked{
+    width: 400px;
+    height: 400px;
+
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCuSglHOosREAzDSEptlOyT06spYrK2SMpsA&s')
+    center/cover no-repeat;
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 5%,
+        black 75%
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 5%,
+        black 75%
+    );
+}
+
+#masked {
+    -webkit-mask-image: radial-gradient(ellipse 20% 90% at 27% 50%, black 40% transparent 50%);
+    mask-image: radial-gradient(ellipse 20% 90% at 27% 50%, black 40% transparent 50%);
+}
+
+/* IMAGEN NORMAL */
+
+.imagen-normal{
+    width: 350px;
+    height: 250px;
+
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb')
+    center/cover no-repeat;
+
+    margin-bottom: 30px;
+}
+.masked2{
+    width: 400px;
+    height: 400px;
+
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200');
+
+    background-size: cover;
+    background-position: center;
+
+    clip-path: path("M200 360 L40 200 A80 80 0 1 1 200 80 A80 80 0 1 1 360 200 Z");
+}
+
