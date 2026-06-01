@@ -1,0 +1,562 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#e8edf2;
+    font-family:Arial, sans-serif;
+}
+
+.contenedor{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+input{
+    width:320px;
+    padding:15px 20px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    background:#fff;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.15);
+
+    transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+input::placeholder{
+    color:#888;
+}
+
+input:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 10px 25px rgba(172, 214, 18, 0.35);
+}
+
+input:focus{
+    outline:none;
+
+    transform:
+    translateY(-5px)
+    scale(1.03);
+
+    box-shadow:
+    0 0 0 4px rgba(92, 12, 196, 0.25),
+    0 15px 30px rgba(0,0,0,.35);
+}
+.botones{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+    justify-content:center;
+}
+
+.btn{
+    padding:12px 20px;
+    border-radius:12px;
+    background:white;
+    box-shadow:0 8px 20px rgba(218, 25, 25, 0.15);
+
+    cursor:pointer;
+    font-weight:bold;
+
+    transition:.3s ease;
+}
+
+/* hover bonito */
+.btn:hover{
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 12px 25px rgba(172, 214, 18, 0.35);
+}
+
+/* click */
+.btn:active{
+    transform:scale(0.95);
+}
+
+/* ===== FONDO MODERNO ANIMADO ===== */
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial, sans-serif;
+    background: radial-gradient(circle at top, #1e1e2f, #0f0f1a);
+    overflow:hidden;
+}
+
+/* luces de fondo animadas */
+body::before{
+    content:"";
+    position:fixed;
+    width:400px;
+    height:400px;
+    background:#00f2ff;
+    filter:blur(120px);
+    top:10%;
+    left:20%;
+    opacity:.3;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:400px;
+    height:400px;
+    background:#ff00ff;
+    filter:blur(120px);
+    bottom:10%;
+    right:20%;
+    opacity:.25;
+}
+
+/* ===== TEXTO RESULTADO ===== */
+.resultado{
+    position:fixed;
+    top:20px;
+    left:20px;
+
+    padding:12px 25px;
+    border-radius:15px;
+
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    box-shadow:0 0 20px rgba(0,242,255,0.2);
+}
+
+/* ===== BOTÓN POWER NEÓN ===== */
+.power{
+    position:fixed;
+    width:140px;
+    height:140px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:50px;
+    color:white;
+
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+
+    border:2px solid rgba(0,242,255,0.5);
+
+    box-shadow:
+        0 0 20px rgba(0,242,255,0.4),
+        0 0 60px rgba(255,0,255,0.2);
+
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    transition:.3s ease;
+}
+
+/* hover normal */
+.power:hover{
+    transform:translate(-50%,-50%) scale(1.1);
+    box-shadow:
+        0 0 30px rgba(0,242,255,0.8),
+        0 0 80px rgba(255,0,255,0.5),
+        0 0 120px rgba(0,242,255,0.3);
+    cursor:pointer;
+}
+
+/* CLICK = EFECTO ENCENDIDO 🔥 */
+.power:active{
+    transform:translate(-50%,-50%) scale(0.95);
+
+    box-shadow:
+        0 0 40px #00f2ff,
+        0 0 100px #00f2ff,
+        0 0 160px #ff00ff;
+
+    animation: glow 0.6s infinite alternate;
+}
+
+/* animación de brillo */
+@keyframes glow{
+    from{
+        filter:brightness(1);
+    }
+    to{
+        filter:brightness(2);
+    }
+}
+
+/* ===== SEMÁFORO ANIMADO ===== */
+
+.semaforo{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+
+    width:90px;
+    padding:15px 10px;
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+
+    align-items:center;
+
+    box-shadow:0 0 25px rgba(0,0,0,.3);
+}
+
+.luz{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+
+    background:#222;
+    box-shadow: inset 0 0 10px rgba(0,0,0,.6);
+
+    animation:apagado 6s infinite;
+}
+
+/* ===== ANIMACIONES INDIVIDUALES ===== */
+
+.rojo{
+    background:#ff0033;
+    animation:rojo 6s infinite;
+}
+
+.amarillo{
+    background:#ffcc00;
+    animation:amarillo 6s infinite;
+}
+
+.azul{
+    background:#00aaff;
+    animation:azul 6s infinite;
+}
+
+/* ===== SECUENCIA SEMÁFORO ===== */
+
+@keyframes rojo{
+    0%, 30%{
+        box-shadow:0 0 25px #ff0033, 0 0 60px #ff0033;
+        filter:brightness(2);
+    }
+    31%,100%{
+        box-shadow:none;
+        filter:brightness(0.4);
+    }
+}
+
+@keyframes amarillo{
+    0%,30%{
+        box-shadow:none;
+        filter:brightness(0.4);
+    }
+    31%,60%{
+        box-shadow:0 0 25px #ffcc00, 0 0 60px #ffcc00;
+        filter:brightness(2);
+    }
+    61%,100%{
+        box-shadow:none;
+        filter:brightness(0.4);
+    }
+}
+
+@keyframes azul{
+    0%,60%{
+        box-shadow:none;
+        filter:brightness(0.4);
+    }
+    61%,100%{
+        box-shadow:0 0 25px #00aaff, 0 0 60px #00aaff;
+        filter:brightness(2);
+    }
+}
+/* ===== CONTENEDOR INFERIOR ===== */
+.abajo{
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+/* ===== BOTÓN DROP-SHADOW ===== */
+.btn-drop{
+    padding:15px 25px;
+    border:none;
+    border-radius:15px;
+
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+
+    cursor:pointer;
+
+    /* DROP SHADOW PROFUNDO */
+    filter: drop-shadow(0 15px 20px rgba(0,0,0,.4));
+
+    transition:.3s ease;
+}
+
+/* hover brillante */
+.btn-drop:hover{
+    transform:translateY(-6px) scale(1.05);
+
+    filter: drop-shadow(0 25px 30px rgba(0,198,255,.6));
+
+    box-shadow:
+        0 0 20px rgba(0,198,255,.5),
+        0 0 40px rgba(0,114,255,.4);
+}
+
+/* click */
+.btn-drop:active{
+    transform:scale(0.95);
+}
+
+/* ===== CAJITA BOX-SHADOW ===== */
+.caja-glow{
+    width:180px;
+    padding:18px;
+
+    text-align:center;
+    border-radius:15px;
+
+    color:white;
+    font-weight:bold;
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    /* BOX SHADOW ABAJO */
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.4),
+        0 0 20px rgba(255,0,255,.4),
+        0 0 40px rgba(0,200,255,.3);
+
+    transition:.3s ease;
+}
+
+/* hover glow fuerte */
+.caja-glow:hover{
+    transform:translateY(-6px) scale(1.05);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,.5),
+        0 0 40px rgba(255,0,255,.7),
+        0 0 90px rgba(0,200,255,.5);
+}
+/* ===== TEXTO FINAL ULTRA NEÓN ===== */
+
+.texto-final{
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+
+    font-size:34px;
+    font-weight:900;
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:white;
+
+    /* glow inicial */
+    text-shadow:
+        0 0 5px #00f2ff,
+        0 0 10px #00f2ff,
+        0 0 20px #ff00ff,
+        0 0 40px #00ff88;
+
+    animation:
+        brillo 2.5s infinite ease-in-out,
+        colores 6s infinite linear;
+
+    padding:10px 20px;
+    border-radius:15px;
+
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(8px);
+
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+/* ===== ANIMACIÓN DE BRILLO (PULSO) ===== */
+@keyframes brillo{
+    0%,100%{
+        transform:translateX(-50%) scale(1);
+        filter:brightness(1);
+    }
+    50%{
+        transform:translateX(-50%) scale(1.15);
+        filter:brightness(2);
+    }
+}
+
+/* ===== CAMBIO DE COLORES FLUIDO ===== */
+@keyframes colores{
+    0%{
+        text-shadow:
+            0 0 10px #00f2ff,
+            0 0 20px #00f2ff,
+            0 0 40px #00f2ff;
+    }
+
+    33%{
+        text-shadow:
+            0 0 10px #ff00ff,
+            0 0 20px #ff00ff,
+            0 0 40px #ff00ff;
+    }
+
+    66%{
+        text-shadow:
+            0 0 10px #00ff88,
+            0 0 20px #00ff88,
+            0 0 40px #00ff88;
+    }
+
+    100%{
+        text-shadow:
+            0 0 10px #00f2ff,
+            0 0 20px #00f2ff,
+            0 0 40px #00f2ff;
+    }
+}
+
+/* hover más potente */
+.texto-final:hover{
+    transform:translateX(-50%) scale(1.25);
+    transition:.3s ease;
+    cursor:pointer;
+}
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#e8edf2;
+}
+
+.caja{
+    width:200px;
+    padding:20px;
+    background:white;
+    text-align:center;
+    border-radius:15px;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.35),
+        inset 0 0 10px rgba(0,0,0,0.2),
+        0 0 25px rgba(255,0,255,0.5);
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#e8edf2;
+}
+
+.contenedor-img{
+    width:300px;
+    padding:15px;
+    border-radius:20px;
+
+    background:white;
+
+    /* 🔥 OUTER SHADOW */
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.3),
+        0 0 30px rgba(0,200,255,0.2);
+
+    transition:.3s ease;
+}
+
+/* efecto hover */
+.contenedor-img:hover{
+    transform:translateY(-8px) scale(1.05);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.4),
+        0 0 50px rgba(255,0,255,0.4);
+}
+
+.contenedor-img img{
+    width:100%;
+    border-radius:15px;
+    display:block;
+}  
+
+/* ======================================================= */
+/* ANEXO: EFECTO INSET (TEXTO GRABADO TIPO PRENSA)         */
+/* ======================================================= */
+
+.caja {
+    width: auto;
+    max-width: 500px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    
+    /* 1. Fondo oscuro establecido para la ilusión de profundidad */
+    background-color: #565656; 
+    
+    /* Removemos los bordes y sombras anteriores para limpiar el diseño */
+    box-shadow: none; 
+}
+
+/* Aplicamos las propiedades exactas de tu guía de estudio */
+.caja {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 75px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    /* 2. El relleno se vuelve invisible para ver el fondo calado */
+    color: transparent;
+
+    /* 3. El truco secreto: recortar el fondo gris a los límites del texto */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+
+    /* 4. Sombra blanca sutil abajo que crea el efecto biselado/hundido */
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+}

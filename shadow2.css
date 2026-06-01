@@ -1,0 +1,258 @@
+/* ===== RESETEO DE ESTILOS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ===== CONTROL DEL FONDO CLARO INTERACTIVO ===== */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    
+    /* Degradado lineal limpio de 3 colores pastel */
+    background: linear-gradient(135deg, #e0f2fe 0%, #f3e8ff 50%, #fef9c3 100%);
+}
+
+/* Esferas de luz difuminadas para dar profundidad estética */
+body::before, body::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.4;
+    z-index: 1;
+}
+body::before {
+    width: 450px;
+    height: 450px;
+    background: #38bdf8; /* Azul turquesa */
+    top: -5%;
+    left: -5%;
+}
+body::after {
+    width: 400px;
+    height: 400px;
+    background: #c084fc; /* Violeta suave */
+    bottom: -5%;
+    right: -5%;
+}
+
+/* ===== CONTENEDOR PRINCIPAL (TARJETA) ===== */
+.login-container {
+    width: 100%;
+    max-width: 380px;
+    padding: 40px 30px;
+    position: relative;
+    z-index: 10;
+
+    /* Cristal esmerilado para fondos claros */
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    
+    /* Sombras suaves multinivel */
+    box-shadow: 
+        0 20px 40px rgba(15, 23, 42, 0.06),
+        0 1px 3px rgba(15, 23, 42, 0.04);
+        
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px rgba(15, 23, 42, 0.1);
+}
+
+/* ===== ENCABEZADOS Y TEXTOS ===== */
+.login-container h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+}
+
+.description {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+/* ===== BLOQUES DE ENTRADA (INPUTS) ===== */
+.input-block {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Etiquetas arriba del input como en tu pantalla */
+.input-block label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 8px;
+    padding-left: 2px;
+}
+
+.input-block input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #1e293b;
+    background: rgba(255, 255, 255, 0.85);
+    
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+.input-block input::placeholder {
+    color: #94a3b8;
+}
+
+/* Efecto focus iluminado al seleccionar la caja */
+.input-block input:focus {
+    background: #ffffff;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+/* ===== FILA DE OPCIONES INFERIORES ===== */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px 0 26px 0;
+    font-size: 13px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    color: #475569;
+    cursor: pointer;
+    user-select: none;
+}
+
+.remember-me input {
+    margin-right: 6px;
+    accent-color: #6366f1; /* Pone el check azul/morado */
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.forgot-link {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.forgot-link:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+/* ===== BOTÓN PRINCIPAL ESTILIZADO ===== */
+.btn-submit {
+    width: 100%;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    
+    /* Degradado sutil para el botón que combina con la interfaz */
+    background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+    
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+    transition: all 0.2s ease;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #4338ca 0%, #4f46e5 100%);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+    transform: scale(1.01);
+}
+
+.btn-submit:active {
+    transform: scale(0.99);
+}
+
+/* ===== TEXTO DE REGISTRO INFERIOR ===== */
+.footer-text {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.footer-text a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.footer-text a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+
+/* ==========================================================================
+   NUEVA CAPA: LOGOS EN ESQUINAS SIMÉTRICAS PARA MÁXIMA VISIBILIDAD (SIN TAPAR EL LOGIN)
+   ========================================================================== */
+/* ==========================================================================
+   NUEVA CAPA: MARCA DE AGUA DEL SENA EN TODO EL FONDO DE LA PANTALLA
+   ========================================================================== */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    /* Enlace directo al escudo oficial del SENA */
+    background-image: url('https://www.bing.com/th/id/OIP.C6uAGI_aptcU1YcQHUFw3gHaHa?w=193&h=193&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2'); 
+    
+    /* CONTROL DE PATRÓN: Se repite en cuadrícula por todo el fondo */
+    background-repeat: repeat; 
+    
+    /* TAMAÑO DEL LOGO: 150px para que se repita de forma armónica y elegante */
+    background-size: 150px; 
+    background-position: center;
+    
+    /* ELIMINADO EL BLUR: Los bordes se verán completamente nítidos */
+    filter: none; 
+    
+    /* MARCA DE AGUA SUTIL: Opacidad muy baja (5%) para que no compita con tus textos */
+    opacity: 0.05; 
+    
+    /* Posicionamiento por detrás de todos los elementos interactivos */
+    z-index: 0; 
+    pointer-events: none;
+}
+
+/* Forzamos el orden de las capas existentes para que tu tarjeta flote adelante */
+body::after {
+    z-index: 1;
+}
+
+.login-container {
+    z-index: 10;
+}
+
