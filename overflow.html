@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="overflow.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="caja visible">
+            <h3>Visible (Default)</h3>
+            <p>Este es un texto largo que se desbordará de la caja porque el contenido es más grande que el contenedor definido.</p>
+        </div>
+
+        <div class="caja hidden">
+            <h3>Hidden</h3>
+            <p>Este texto se cortará donde termine el tamaño de la caja y no aparecerá nada que sobrepase los límites.</p>
+        </div>
+
+        <div class="caja scroll">
+            <h3>Scroll</h3>
+            <p>Aquí verás barras de desplazamiento siempre, aunque el texto sea corto, permitiéndote navegar por todo el contenido oculto.</p>
+        </div>
+
+        <div class="caja auto">
+            <h3>Auto</h3>
+            <p>Esta es la opción más usada; las barras de scroll solo aparecerán si el contenido realmente es demasiado grande para la caja.</p>
+        </div>
+    </div>
+
+    <div class="caja visible">
+    <img src="imagen.jgp.jpg" alt="casa" width="500">
+</div>
+
+<div class="caja hidden">
+    <img src="imagen.jgp.jpg" alt="flor" width="500">
+</div>
+
+<div class="caja scroll">
+    <img src="imagen.jgp.jpg" alt="flor" width="500">
+</div>
+
+<div class="caja auto">
+    <img src="imagen.jgp.jpg" alt="flor" width="500">
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+/* El contenedor debe ser relativo para que los hijos se posicionen respecto a él */
+.contenedor-padre {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    border: 3px dashed black;
+    margin: 50px auto;
+}
+
+/* Estilo base para todas las cajas */
+.caja {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+/* Posiciones específicas */
+.roja { background-color: rgb(93, 7, 231); top: 12px; left: 12px; }
+.naranja { background-color: orange; top: 20px; right: 20px; }
+.amarilla { background-color: yellow; bottom: 50px; left: 50px; }
+.verde { background-color: rgb(230, 131, 106); bottom: 80px; right: 80px; }
+
+/* Centrado perfecto del elemento central */
+.centro {
+    background-color: rgb(214, 9, 9);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

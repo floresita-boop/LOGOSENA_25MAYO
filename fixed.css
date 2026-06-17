@@ -1,0 +1,31 @@
+body{
+    margin:0;
+    height:200vh; /* para poder hacer scroll */
+}
+
+/* estilo común */
+.caja{
+    width:150px;
+    height:100px;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+}
+
+/* 🔵 bloque 1 fixed */
+.caja1{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: steelblue;
+}
+
+/* 🔴 bloque 2 fixed */
+.caja2{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: crimson;
+}

@@ -1,0 +1,47 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.contenedor-columnas {
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 2px dashed #ff4757;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.titulo-span {
+    column-span: all;
+    text-align: center;
+    color: #2f3542;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.bloque-texto {
+    background-color: #f1f2f6;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 5px solid #3742fa;
+}
+
+h3 {
+    color: #3742fa;
+    margin-top: 0;
+}
+
+/* --- Nuevas propiedades de Break --- */
+
+.forzar-columna {
+    /* Fuerza a que este bloque empiece siempre en una columna nueva */
+    break-before: column;
+    
+    /* Podrías usar break-after: column; si quisieras 
+       que lo que sigue empiece en otra columna */
+}

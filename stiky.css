@@ -1,0 +1,23 @@
+/* El menú principal se pega al tope absoluto de la ventana */
+.menu-sticky {
+    position: sticky;
+    top: 0;
+    background-color: rgb(169, 28, 235);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Los títulos de las secciones se pegan justo debajo del menú */
+.titulo-sticky {
+    position: sticky;
+    top: 60px; /* Ajusta este valor según la altura de tu menú superior */
+    background-color: #882d5f;
+    color: white;
+    padding: 10px;
+}
+
+.espaciador {
+    height: 800px; /* Mucha altura para forzar el scroll */
+}

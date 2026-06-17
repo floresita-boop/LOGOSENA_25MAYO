@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.contenedor {
+    border: 2px solid #333;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #f4f4f4;
+}
+
+.caja {
+    width: 120px;
+    height: 80px;
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    font-weight: bold;
+}
+
+.azul { background: steelblue; }
+.verde { background: seagreen; }
+.roja { background: crimson; }
+.naranja { background: darkorange; }
+
+/* Ocultar checkboxes */
+input {
+    display: none;
+}
+
+/* Botones */
+.boton {
+    padding: 10px 15px;
+    margin: 5px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* DISPLAY NONE */
+#toggle2:checked ~ .contenedor .caja2 {
+    display: none;
+}
+
+/* VISIBILITY HIDDEN */
+#toggle3:checked ~ .contenedor .caja3 {
+    visibility: hidden;
+}

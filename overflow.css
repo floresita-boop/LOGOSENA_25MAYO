@@ -1,0 +1,35 @@
+/* Contenedor principal para organizar las cajas en fila */
+.contenedor {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos comunes para las cajas */
+.caja {
+    width: 200px;
+    height: 150px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+/* Propiedades específicas de cada caso */
+.visible {
+    overflow: visible; /* El contenido sale de la caja */
+    border-color: red;
+}
+
+.hidden {
+    overflow: hidden; /* El contenido sobrante se corta */
+    border-color: blue;
+}
+
+.scroll {
+    overflow: scroll; /* Siempre muestra las barras */
+    border-color: green;
+}
+
+.auto {
+    overflow: auto; /* Muestra barras solo si es necesario */
+    border-color: orange;
+}

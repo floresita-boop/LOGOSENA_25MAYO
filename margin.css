@@ -1,0 +1,44 @@
+/* Estilos generales para que sean visibles */
+div {
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    margin-bottom: 20px;
+}
+
+/* 1. margin: auto:
+   Calcula automáticamente el margen izquierdo y derecho para centrar el bloque.
+   Requiere que el elemento tenga un ancho (width) definido. */
+.caja-auto {
+    margin: 0 auto; /* 0 arriba/abajo, auto izquierda/derecha */
+}
+
+/* 2. margin-left: 50px:
+   Crea un espacio fijo específico desde el borde izquierdo hacia afuera. */
+.caja-left {
+    margin-left: 50px;
+}
+
+/* 3. margin-left: auto:
+   Al aplicar 'auto' solo a la izquierda, el navegador intenta asignar todo el 
+   espacio disponible a ese margen, empujando el elemento al extremo derecho. */
+.caja-left-auto {
+    margin-left: auto;
+}
+
+/* 4. Estilos para el botón centrado */
+.mi-boton {
+    display: block;        /* Necesario para que margin: auto funcione */
+    margin: 0 auto;        /* Centrado horizontal */
+    padding: 15px 30px;    /* Tamaño interno */
+    background-color: #007bff; /* Color azul */
+    color: white;          /* Color de letra */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mi-boton:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+}

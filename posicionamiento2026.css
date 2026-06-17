@@ -1,0 +1,84 @@
+input{
+    display:none;
+}
+
+.contenedor{
+    display:grid;
+    grid-template-columns: repeat(3, 80px);
+    gap:10px;
+}
+
+.caja{
+    width:80px;
+    height:80px;
+    border:2px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+/* 🔴 DISPLAY NONE: desaparece completamente */
+
+#c1:checked ~ .contenedor label[for="c1"],
+#c2:checked ~ .contenedor label[for="c2"],
+#c3:checked ~ .contenedor label[for="c3"],
+#c4:checked ~ .contenedor label[for="c4"],
+#c5:checked ~ .contenedor label[for="c5"],
+#c6:checked ~ .contenedor label[for="c6"],
+#c7:checked ~ .contenedor label[for="c7"],
+#c8:checked ~ .contenedor label[for="c8"],
+#c9:checked ~ .contenedor label[for="c9"]{
+    display:none;
+}
+
+
+.contenedor{
+    display:grid;
+    grid-template-columns: repeat(3, 80px);
+    gap:10px;
+    margin-bottom: 30px;
+}
+
+.caja{
+    width:80px;
+    height:80px;
+    border:2px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+.visibility input{
+    display:none;
+}
+
+.visibility .contenedor{
+    display:grid;
+    grid-template-columns: repeat(3, 80px);
+    gap:10px;
+}
+
+.visibility .caja{
+    width:80px;
+    height:80px;
+    border:2px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+/* 🔵 VISIBILITY HIDDEN (funciona ahora sí) */
+#v1:checked ~ .contenedor label[for="v1"],
+#v2:checked ~ .contenedor label[for="v2"],
+#v3:checked ~ .contenedor label[for="v3"],
+#v4:checked ~ .contenedor label[for="v4"],
+#v5:checked ~ .contenedor label[for="v5"],
+#v6:checked ~ .contenedor label[for="v6"],
+#v7:checked ~ .contenedor label[for="v7"],
+#v8:checked ~ .contenedor label[for="v8"],
+#v9:checked ~ .contenedor label[for="v9"]{
+    visibility: hidden;
+}

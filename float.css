@@ -1,0 +1,17 @@
+/* Caja roja (la que flota) */
+.caja-roja {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* Cambia entre 'left' o 'right' según necesites */
+    float: right; 
+}
+
+/* Caja azul (la que limpia) */
+.caja-azul {
+    width: 400px;
+    height: 150px;
+    background-color: blue;
+    /* Cambia entre 'left', 'right' o 'both' para limpiar el float */
+    clear: right; 
+}
