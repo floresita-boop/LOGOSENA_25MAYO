@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    text-align:center;
+    background:#111;
+    color:white;
+}
+
+h1{
+    margin:20px;
+}
+
+.contenedor{
+    width:90%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+
+    background:url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200");
+    background-size:cover;
+    padding:40px;
+}
+
+.caja{
+    width:150px;
+    height:150px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-weight:bold;
+    font-size:18px;
+    color:white;
+
+    border-radius:15px;
+}
+
+/* MODOS */
+
+.normal{
+    background:red;
+    mix-blend-mode:normal;
+}
+
+.multiply{
+    background:yellow;
+    mix-blend-mode:multiply;
+}
+
+.screen{
+    background:cyan;
+    mix-blend-mode:screen;
+}
+
+.overlay{
+    background:orange;
+    mix-blend-mode:overlay;
+}
+
+.darken{
+    background:lime;
+    mix-blend-mode:darken;
+}
+
+.lighten{
+    background:purple;
+    mix-blend-mode:lighten;
+}
+
+.dodge{
+    background:hotpink;
+    mix-blend-mode:color-dodge;
+}
+
+.saturation{
+    background:blue;
+    mix-blend-mode:saturation;
+}
+
+.color{
+    background:red;
+    mix-blend-mode:color;
+}
+
+.luminosity{
+    background:white;
+    color:black;
+    mix-blend-mode:luminosity;
+}
+
+
+

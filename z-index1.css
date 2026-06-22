@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    font-family:Arial, sans-serif;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    margin:30px;
+    text-shadow:0 0 15px cyan;
+}
+
+.contenedor{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:50px;
+    padding:50px;
+}
+
+.caja{
+    width:180px;
+    height:180px;
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:20px;
+    transition:1s;
+    cursor:pointer;
+}
+
+/* ROTATE */
+
+.rotate{
+    background:linear-gradient(45deg,#ff006e,#ff4d6d);
+    box-shadow:0 0 20px #ff006e;
+}
+
+.rotate:hover{
+    transform:rotate(360deg);
+}
+
+/* SCALE */
+
+.scale{
+    background:linear-gradient(45deg,#00f5d4,#00bbf9);
+    box-shadow:0 0 20px #00f5d4;
+}
+
+.scale:hover{
+    transform:scale(1.4);
+}
+
+/* SKEW */
+
+.skew{
+    background:linear-gradient(45deg,#8338ec,#c77dff);
+    box-shadow:0 0 20px #8338ec;
+}
+
+.skew:hover{
+    transform:skew(20deg,10deg);
+}
+
+/* MATRIX */
+
+.matrix{
+    background:linear-gradient(45deg,#ffbe0b,#fb5607);
+    box-shadow:0 0 20px #ffbe0b;
+}
+
+.matrix:hover{
+    transform:matrix(1,0.3,0.3,1,20,10);
+}

@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.contenedor{
+    position:relative;
+    width:700px;
+}
+
+.contenedor img{
+    width:100%;
+    display:block;
+}
+
+.capa{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+}
+
+.multiply{
+    background:red;
+    mix-blend-mode:multiply;
+}

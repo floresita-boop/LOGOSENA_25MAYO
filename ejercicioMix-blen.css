@@ -1,0 +1,105 @@
+/* --- ESTE ES EL NUEVO CÓDIGO PARA EL FONDO DEL MUNDIAL --- */
+body {
+    margin: 0;
+    padding: 0;
+    /* Sustituye la URL por la imagen de estadio que elijas */
+    background-image: url('https://static.vecteezy.com/system/resources/previews/049/026/339/original/colombia-soccer-team-logo-png.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* Esto oscurece un poco la imagen para que tus cartas resalten más */
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    min-height: 100vh;
+}
+.deck {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #fff; /* Borde grueso llamativo */
+    border-radius: 20px;
+    margin-left: -100px; /* Traslape horizontal */
+    transition: 0.5s ease-in-out;
+    position: relative;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.6);
+     overflow: hidden;
+     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bbb6a3, 0 0 40px #fcd116;
+    /* ... lo que ya tienes ... */
+    background-color: rgb(204, 136, 136) !important; /* Agrega esto */
+
+}
+
+/* EFECTO ESCALONADO HACIA ABAJO */
+.p1 { background-image: url('https://sportrenders.com/wp-content/uploads/2024/06/Luis-Diaz-Colombia-PNG-Football-Render-670x838.png'); z-index: 1; transform: rotate(-5deg); margin-top: 0px; }
+.p2 { background-image: url('https://palmeirasonline.com/wp-content/uploads/2023/05/O-jogador-Richard-Rios-da-SE-Palmeiras-comemora-seu-gol-contra-a-equipe-do-Fortaleza-EC-durante-partida-valida-pelas-oitavas-de-final-ida-da-Copa-da-Copa-do-Brasil-na-arena-Allianz-Parque.jpg'); z-index: 2; transform: rotate(-2deg); margin-top: 40px; }
+.p3 { background-image: url('https://palmeirasonline.com/wp-content/uploads/2023/05/O-jogador-Richard-Rios-da-SE-Palmeiras-comemora-seu-gol-contra-a-equipe-do-Fortaleza-EC-durante-partida-valida-pelas-oitavas-de-final-ida-da-Copa-da-Copa-do-Brasil-na-arena-Allianz-Parque.jpg'); z-index: 3; transform: matrix(1, 0, 0, 1, 0, 0); margin-top: 80px; }
+.p4 { background-image: url('https://e2.365dm.com/14/04/800x600/santiago-arias-colombia_3125306.jpg?20140416101624'); z-index: 4; transform: rotate(2deg); margin-top: 120px; }
+.p5 { background-image: url('https://www.las2orillas.co/wp-content/uploads/2024/07/daniel-munoz-seleccion-colombia-2021.jpg'); z-index: 5; transform: rotate(5deg); margin-top: 160px; }
+/* Continuación de la escalera hacia abajo */
+.p6 { background-image: url('https://tvazteca.brightspotcdn.com/7d/ac/3f4327a74fe3bc8ad13b9c80d862/camilo.jpg'); z-index: 6; transform: rotate(-3deg); margin-top: 200px; }
+.p7 { background-image: url('https://wallpapers4screen.com/Uploads/4-5-2025/75045/thumb-davinson-sanchez-4k-yellow-neon-lights-colombia-national-football-team-conmebol.jpg'); z-index: 7; transform: rotate(1deg); margin-top: 240px; }
+.p8 { background-image: url('https://imagenes2.eltiempo.com/files/image_600_455/files/fp/uploads/2024/07/10/668f2b5702ec5.r_d.2074-521.jpeg'); z-index: 8; transform: rotate(-1deg); margin-top: 280px; }
+.p9 { background-image: url('https://caracoltv.brightspotcdn.com/dims4/default/1b450d8/2147483647/strip/true/crop/1024x682+0+0/resize/1000x666!/quality/90/?url=http:%2F%2Fcaracol-brightspot.s3.amazonaws.com%2F16%2Ff4%2F5e2f06f04a5587f8069624fed5ee%2F000-33g49xb.jpg'); z-index: 9; transform: rotate(3deg); margin-top: 320px; }
+.p10 { background-image: url('https://caracoltv.brightspotcdn.com/dims4/default/67decb0/2147483647/strip/true/crop/1024x576+0+15/resize/1280x720!/format/webp/quality/75/?url=http:%2F%2Fcaracol-brightspot.s3.us-west-2.amazonaws.com%2F33%2F92%2F892588f14babab65cf861d5e4e2a%2F000-36k67uj.jpg'); z-index: 10; transform: rotate(-2deg); margin-top: 360px; }
+.p11 { background-image: url('https://www.futbolred.com/files/article_main/uploads/2023/09/07/64fa70a225cdf.jpeg'); z-index: 11; transform: rotate(4deg); margin-top: 400px; }
+
+/* COLORES Y EFECTOS LLAMATIVOS */
+.card:hover {
+    z-index: 10 !important;
+    transform: rotate(0deg) scale(1.15) translateY(-50px) !important;
+    border-color: #fcd116; /* Color amarillo bandera al pasar el mouse */
+    box-shadow: 0 0 30px #003893; /* Resplandor azul */
+}
+
+/* Nombres con estilo */
+.card h2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0,56,147,0.9));
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 0 0 14px 14px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Título con efecto llamativo de colores en movimiento */
+h1 {
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    
+    /* Colores de la bandera en un degradado extendido */
+    background: linear-gradient(90deg, #fcd116, #003893, #ce1126, #fcd116);
+    background-size: 300% 100%;
+    
+    /* Aplicar el degradado al texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+    /* Efecto de fusión y resplandor */
+    mix-blend-mode: screen; 
+    text-shadow: 0 0 10px rgba(252, 209, 22, 0.5), 0 0 20px rgba(0, 56, 147, 0.5);
+    
+    /* Animación: hace que los colores se muevan constantemente */
+    animation: moverColores 5s linear infinite;
+}
+
+/* Definición del movimiento */
+@keyframes moverColores {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 300% 50%; }
+}

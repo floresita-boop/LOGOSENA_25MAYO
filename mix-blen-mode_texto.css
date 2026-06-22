@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 { margin-bottom: 30px; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 200px;
+    background-color: #fff; /* IMPORTANTE: Un fondo blanco para que se note la mezcla */
+}
+
+/* AQUÍ ESTÁ EL CAMBIO: El efecto se aplica a la imagen */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+}
+
+/* Aplicación de Modos de Fusión a la IMAGEN */
+.normal img { mix-blend-mode: normal; }
+.multiply img { mix-blend-mode: multiply; }
+.screen img { mix-blend-mode: screen; }
+.overlay img { mix-blend-mode: overlay; }
+.darken img { mix-blend-mode: darken; }
+.lighten img { mix-blend-mode: lighten; }
+.dodge img { mix-blend-mode: color-dodge; }
+.saturation img { mix-blend-mode: saturation; }
+.color img { mix-blend-mode: color; }
+.luminosity img { mix-blend-mode: luminosity; }
