@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    text-align: center;
+    padding: 50px;
+    min-height: 100vh;
+}
+
+h1{
+    color: white;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,.3);
+}
+
+.caja{
+    width: 450px;
+    margin: 25px auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+    transition: transform 0.4s ease;
+}
+
+.caja:hover{
+    transform: scale(1.05);
+}
+
+.texto-ltr,
+.texto-rtl{
+    transition: all 0.5s ease;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* El texto LTR se mueve a la derecha */
+.texto-ltr:hover{
+    padding-left: 100px;
+    color: #0066ff;
+    text-shadow: 0 0 10px #66b3ff;
+}
+
+/* El texto RTL se mueve a la izquierda */
+.texto-rtl:hover{
+    padding-right: 100px;
+    color: #ff3333;
+    text-shadow: 0 0 10px #ff9999;
+}

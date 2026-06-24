@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ESTILO POR DEFECTO (DESHABILITADO) */
+.mi-boton {
+    padding: 10px;
+    background-color: #ccc;
+    color: #666;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    transition: 0.3s;
+}
+
+/* LA MAGIA: Si el formulario tiene todos los campos requeridos válidos */
+/* Entonces el botón cambia de estilo */
+.card:has(input:required:valid) .mi-boton {
+    background-color: #00d4ff;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00d4ff;
+}

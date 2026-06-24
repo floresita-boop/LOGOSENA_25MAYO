@@ -1,0 +1,72 @@
+body {
+    /* Fondo con degradado que se mueve */
+    background: linear-gradient(270deg, #0f2027, #203a43, #2c5364, #1a2a6c);
+    background-size: 800% 800%;
+    animation: movimientoFondo 15s ease infinite;
+    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Esta es la magia de los colores suaves que cambian */
+@keyframes movimientoFondo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 350px;
+}
+
+.row { margin: 20px 0; padding: 10px; border-radius: 8px; transition: 0.3s; }
+
+/* --- COLORES DE ESTADO --- */
+
+/* 1. Checkbox normal marcado (Verde) */
+#c1:checked + .box-label { color: #7bca31; font-weight: bold; }
+
+/* 2. Checkbox Indeterminado (Naranja inicial) */
+#c2:indeterminate + .box-label { color: #ff9900; font-weight: bold; }
+
+/* 2.1 Al marcar el indeterminado, cambia a Verde */
+#c2:checked + .box-label { color: #ab59d1; font-weight: bold; }
+
+/* 3. Radio Buttons Azul */
+input[type="radio"]:checked + .radio-label { color: #00d4ff; font-weight: bold; }
+
+/* Select interactivo */
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #555;
+    background: #000;
+    color: white;
+    cursor: pointer;
+}
+
+select:focus { border-color: #00d4ff; outline: none; }
+
+
+/* 1. Efecto Neón al pasar el mouse por encima de las filas (.row) */
+.row:hover {
+    box-shadow: 0 0 15px rgba(175, 204, 11, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+
+/* Colores neón por cada fruta */
+select.manzana { border-color: #ff3333; color: #ff3333; box-shadow: 0 0 10px #ff3333; }
+select.pera    { border-color: #aaff00; color: #aaff00; box-shadow: 0 0 10px #aaff00; }
+select.mango   { border-color: #ff9900; color: #ff9900; box-shadow: 0 0 10px #ff9900; }
+

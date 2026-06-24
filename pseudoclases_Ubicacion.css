@@ -1,0 +1,22 @@
+/* :link -> enlace que aún no ha sido visitado */
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+
+/* :visited -> enlace que ya fue visitado */
+a:visited{
+    color: purple;
+}
+
+/* :hover -> cuando el mouse pasa sobre el enlace */
+a:hover{
+    background-color: yellow;
+    color: black;
+}
+
+/* :active -> mientras se hace clic sobre el enlace */
+a:active{
+    background-color: red;
+    color: white;
+}

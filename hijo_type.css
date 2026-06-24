@@ -1,0 +1,53 @@
+/* Fondo general */
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #00b4d8, #0077b6, #03045e);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container{
+    width: 400px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Título opcional */
+h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Elementos */
+.element{
+    padding: 15px;
+    margin: 12px 0;
+    background: white;
+    border-radius: 12px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al pasar el mouse */
+.element:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Selecciona el segundo DIV */
+.container div:nth-of-type(2){
+    background: linear-gradient(90deg, #2faf89, #39b6a1);
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(185, 124, 197, 0.8);
+}

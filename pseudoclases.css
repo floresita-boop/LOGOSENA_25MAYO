@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* :hover */
+.hover-btn {
+    padding: 10px 20px;
+    background-color: lightblue;
+    border: none;
+}
+
+.hover-btn:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* :active */
+.active-btn {
+    padding: 10px 20px;
+    background-color: lightgreen;
+    border: none;
+}
+
+.active-btn:active {
+    background-color: green;
+    color: white;
+}
+
+/* :focus */
+.focus-input {
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+.focus-input:focus {
+    border-color: red;
+    outline: none;
+}
+
+/* :focus-within */
+.contenedor {
+    padding: 15px;
+    border: 2px solid gray;
+    width: 250px;
+}
+
+.contenedor:focus-within {
+    border-color: orange;
+    background-color: #fff3cd;
+}
+
+/* :focus-visible */
+.visible-btn {
+    padding: 10px 20px;
+}
+
+.visible-btn:focus-visible {
+    outline: 4px solid purple;
+}

@@ -1,0 +1,59 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.contenedor{
+    width:600px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    color:#333;
+}
+
+.miembro{
+    padding:15px;
+    margin:10px 0;
+    border-radius:10px;
+    background:#f4f4f4;
+    text-align:center;
+    font-size:20px;
+    transition:.4s;
+}
+
+/* Primer hijo */
+.miembro:first-child{
+    background:#00d4ff;
+    color:white;
+    font-weight:bold;
+}
+
+/* Último hijo */
+.miembro:last-child{
+    background:#ff4d6d;
+    color:white;
+    font-weight:bold;
+}
+
+/* Tercer hijo */
+.miembro:nth-child(3){
+    background:#8ac926;
+    color:white;
+    font-weight:bold;
+}
+
+/* Efecto al pasar el mouse */
+.miembro:hover{
+    transform:translateX(15px);
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}

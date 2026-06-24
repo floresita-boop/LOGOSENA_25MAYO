@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de Estados CSS</title>
+    <link rel="stylesheet" href="checked.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Interacción en Tiempo Real</h1>
+
+        <div class="row">
+            <input type="checkbox" id="c1">
+            <label for="c1" class="box-label">Marcado = Verde</label>
+        </div>
+
+        <div class="row">
+            <input type="checkbox" id="c2">
+            <label for="c2" class="box-label">Indeterminado = Naranja (a purpura al marcar)</label>
+        </div>
+
+        <div class="row">
+            <p>Radio buttons:</p>
+            <input type="radio" name="grupo" id="r1">
+            <label for="r1" class="radio-label">Opción A (Azul)</label>
+            <br>
+            <input type="radio" name="grupo" id="r2">
+            <label for="r2" class="radio-label">Opción B (Azul)</label>
+        </div>
+
+        <div class="row">
+            
+            <label>Select y option:</label>
+            
+           <select id="selector" onchange="this.className = this.value">
+    <option value="">Selecciona...</option>
+    <option value="manzana">Manzana</option>
+    <option value="pera">Pera</option>
+    <option value="mango">Mango</option>
+</select>
+                
+
+            </select>
+        </div>
+    </div>
+
+    <script>
+        // Lógica para establecer el estado inicial indeterminado
+        const indet = document.getElementById('c2');
+        indet.indeterminate = true;
+
+        // Opcional: si quieres que al desmarcar el indeterminado vuelva a estar indeterminado
+        indet.addEventListener('click', () => {
+            if (!indet.checked) {
+                indet.indeterminate = true;
+            }
+        });
+    </script>
+</body>
+</html>

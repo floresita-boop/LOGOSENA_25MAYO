@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.contenedor{
+    width:600px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    color:#333;
+}
+
+.caja{
+    background:#e9ecef;
+    margin:10px;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    transition:.4s;
+}
+
+.especial{
+    background:#bde0fe;
+}
+
+/* Selecciona el segundo elemento con clase especial */
+.parent :nth-child(2 of .especial){
+    background:#ff4d6d;
+    color:white;
+    font-weight:bold;
+}
+
+.caja:hover{
+    transform:scale(1.05);
+}
