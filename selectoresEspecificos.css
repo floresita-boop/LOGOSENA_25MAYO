@@ -1,0 +1,113 @@
+/* RESET GENERAL */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.dashboard{
+    display:flex;
+    height:100vh;
+}
+
+/* ===================== */
+/* SIDEBAR (SELECTORES ESPECÍFICOS) */
+/* ===================== */
+
+.sidebar{
+    width:240px;
+    background:linear-gradient(#0057ff,#0033aa);
+    color:white;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+}
+
+.sidebar__title{
+    margin-bottom:40px;
+}
+
+.sidebar__menu{
+    list-style:none;
+}
+
+.sidebar__item{
+    padding:12px 0;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.sidebar__item:hover{
+    padding-left:10px;
+}
+
+.sidebar__version{
+    margin-top:auto;
+    font-size:12px;
+    opacity:.7;
+}
+
+/* ===================== */
+/* CONTENIDO */
+/* ===================== */
+
+.content{
+    flex:1;
+    padding:25px;
+    background:#f3f6fb;
+    display:grid;
+    gap:20px;
+}
+
+/* ===================== */
+/* CARDS */
+/* ===================== */
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    position:relative;
+    border-left:5px solid #1b74ff;
+}
+
+/* SELECTOR PSEUDO ::after + attr() */
+.card::after{
+    content: attr(data-num);
+
+    position:absolute;
+    top:15px;
+    right:20px;
+
+    font-size:40px;
+    font-weight:bold;
+
+    color:rgba(0,0,0,0.08);
+
+    pointer-events:none;
+}
+
+/* SELECTOR HIJO */
+.card__title{
+    margin-bottom:10px;
+}
+
+/* MODIFICADORES (BEM) */
+.card__status{
+    display:inline-block;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+    margin-right:8px;
+}
+
+.card__status--ok{
+    background:#d4f7d8;
+}
+
+.card__status--alert{
+    background:#ffe0c2;
+}

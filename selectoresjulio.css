@@ -1,0 +1,82 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Fondo degradado llamativo */
+    background: linear-gradient(135deg, #667eea 0%, #9b8f94 100%);
+    color: rgb(27, 26, 26);
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px); /* Efecto vidrio */
+    border-radius: 25px;
+    box-shadow: 0 8px 32px 0 rgba(204, 191, 10, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 800px;
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+.subtitle { margin-bottom: 2rem; opacity: 0.8; }
+
+.acciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: rgb(219, 146, 189);
+    color: #764ba2;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background: #f0f0f0;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item {
+    background: rgb(163, 203, 212);
+    color: #460606;
+    padding: 20px;
+    border-radius: 20px;
+    width: 130px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.item:hover { transform: scale(1.05); }
+
+.icon { font-size: 2rem; margin-bottom: 10px; }
+.item strong { display: block; font-size: 1rem; }
+.item span { font-size: 0.8rem; color: #7e0874; }
+
+/* Lógica de filtrado CSS */
+#laptops:target ~ .productos .item:not(.laptop),
+#celulares:target ~ .productos .item:not(.celular),
+#audio:target ~ .productos .item:not(.audio),
+#gaming:target ~ .productos .item:not(.gaming) {
+    display: none;
+}
+
+#todo:target ~ .productos .item { display: block; }

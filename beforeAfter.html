@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="beforeAfter.css">
+
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- MENU LATERAL -->
+    <aside class="menu">
+
+        <h2>Mi Dashboard</h2>
+
+        <ul>
+            <li>Inicio</li>
+            <li>Proyectos</li>
+            <li>Reportes</li>
+            <li>Configuración</li>
+        </ul>
+
+        <span class="version">Versión 2.3.4</span>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="contenido">
+
+        <section class="card" data-num="01">
+            <h3>Estado del Sistema</h3>
+            <span class="ok">✔ Operacional</span>
+            <span class="alerta">3 Alertas</span>
+        </section>
+
+        <section class="card" data-num="02">
+            <h3>Tareas Pendientes</h3>
+
+            <ul>
+                <li><input type="checkbox" checked> Diseñar interfaz de usuario</li>
+                <li><input type="checkbox"> Implementar CSS</li>
+                <li><input type="checkbox"> Optimizar rendimiento</li>
+            </ul>
+
+        </section>
+
+        <section class="card" data-num="03">
+            <h3>Equipo</h3>
+
+            <div class="equipo">
+                <img src="img/usuario1.jpg">
+                <img src="img/usuario2.jpg">
+                <img src="img/usuario3.jpg">
+            </div>
+
+        </section>
+
+        <section class="card" data-num="04">
+            <h3>Información</h3>
+
+            <p>Este dashboard muestra técnicas avanzadas de CSS.</p>
+
+            <ul>
+                <li>::before y ::after</li>
+                <li>Variables CSS</li>
+                <li>Gradientes</li>
+                <li>Contadores CSS</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
